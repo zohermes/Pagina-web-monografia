@@ -1,0 +1,169 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Fondo suave y amigable */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 18px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #e0f7fa; /* Celeste claro para la barra lateral */
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #b3e5fc;
+}
+
+/* Main content */
+main {
+    margin-left: 270px;
+    padding: 20px;
+    max-width: 800px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    color: #000000;
+}
+
+/* IA Cards */
+.ia-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.ia-card:hover {
+    transform: translateY(-5px);
+}
+
+.ia-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.ia-info h3 {
+    margin: 0;
+    color: #333;
+}
+
+.ia-info p {
+    margin: 5px 0 10px;
+    color: #666;
+}
+
+.ia-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.ia-info a:hover {
+    text-decoration: underline;
+}
+
+/* Quote Section */
+.quote-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.quote-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.quote-card img.rounded-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.quote-card p {
+    font-style: italic;
+    color: #555;
+}
+
+.quote-card span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .quote-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quote-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
